@@ -11,8 +11,8 @@ namespace MiCuaderno
         public string NumeroContacto { get; set; }
         public List<Alumno> Hijos { get; set; }
 
-        public Padre(string nombre, string apellido, string correoElectronico, string numeroContacto)
-           : base(nombre, apellido, correoElectronico)
+        public Padre(string nombre, string apellido, string correoElectronico,string clave, string numeroContacto)
+           : base(nombre, apellido, correoElectronico, clave)
         {
             NumeroContacto = numeroContacto;
             Hijos = new List<Alumno>(); // Inicializa la lista de hijos en el constructor.

@@ -10,8 +10,8 @@ namespace MiCuaderno
     {
         public string Titulo { get; set; }
 
-        public Director(string nombre, string apellido, string correoElectronico, string titulo)
-            : base(nombre, apellido, correoElectronico)
+        public Director(string nombre, string apellido, string correoElectronico,string clave, string titulo)
+            : base(nombre, apellido, correoElectronico,clave)
         {
             Titulo = titulo;
         }

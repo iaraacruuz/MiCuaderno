@@ -11,5 +11,14 @@ namespace MiCuaderno
         public string Asunto { get; set; }
         public string Mensaje { get; set; }
         public DateTime FechaEnvio { get; set; }
+
+        public Comunicacion(string asunto, string mensaje, DateTime fechaEnvio)
+        {
+            Asunto = asunto;
+            Mensaje = mensaje;
+            FechaEnvio = fechaEnvio;
+        }
+
     }
+
 }

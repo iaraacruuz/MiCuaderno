@@ -14,6 +14,8 @@ namespace MiCuaderno
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string CorreoElectronico { get; set; }
+        public string Clave { get; set; }
+        
 
         public List<Nota> Notas { get; set; }
         public List<Comunicacion> ComunicacionesEnviadas { get; set; }
@@ -21,16 +23,18 @@ namespace MiCuaderno
         public List<Asistencia> Asistencias { get; set; }
 
         // Constructor para inicializar una instancia de Persona
-        public Persona(string nombre, string apellido, string correoElectronico)
+        public Persona(string nombre, string apellido, string correoElectronico, string clave)
         {
             Nombre = nombre;
             Apellido = apellido;
             CorreoElectronico = correoElectronico;
-
+            Clave = clave;
+            
             Notas = new List<Nota>();
             ComunicacionesEnviadas = new List<Comunicacion>();
             ComunicacionesRecibidas = new List<Comunicacion>();
             Asistencias = new List<Asistencia>();
+            
         }
 
         // Método para agregar una nota

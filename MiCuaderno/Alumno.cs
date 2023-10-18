@@ -11,8 +11,8 @@ namespace MiCuaderno
         public int NumeroLegajo { get; set; }
         public List<Asistencia> RegistroAsistencias { get; }
 
-        public Alumno(string nombre, string apellido, string correoElectrónico, int numeroLegajo)
-        : base(nombre, apellido, correoElectrónico)
+        public Alumno(string nombre, string apellido, string correoElectrónico, string clave,  int numeroLegajo)
+        : base(nombre, apellido, correoElectrónico,clave)
         {
             NumeroLegajo = numeroLegajo;
         }

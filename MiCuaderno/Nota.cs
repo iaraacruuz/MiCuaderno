@@ -11,5 +11,11 @@ namespace MiCuaderno
 
         public string Asignatura { get; set; }
         public double Valor { get; set; }
+
+        public Nota(string asignatura, double valor)
+        {
+            Asignatura = asignatura;
+            Valor = valor;
+        }
     }
 }
